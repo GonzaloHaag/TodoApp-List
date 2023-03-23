@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,400&display=swap');
+
+:root{
+   
+
+ --font-family: 'Josefin Sans', sans-serif;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+
+}
+body{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 2rem;
+    margin-top: 2rem;
+    width: 25rem;
+}
+.container h1{
+    text-align: center;
+}
+.search{
+    width: 100%;
+    background-color: blue;
+}
+form{
+    display: flex;
+    width: 100%;
+}
+.input{
+    width: 100%;
+    padding: 0.5rem;
+   
+}
+.ad-btn{
+    background-color: rgb(51, 94, 94);
+    width: 3.5em;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(128, 128, 128, 0.507);
+    border-radius: 5px;
+    padding-left: 2em;
+    
+}
+
+.delete-btn{
+    background-color: red;
+    color: white;
+    width: 2.5em;
+    height: 2.5em;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
