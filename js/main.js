@@ -2,6 +2,10 @@ const input = document.querySelector(".input");
 const addBtn = document.querySelector(".ad-btn");
 const listaTareas = document.querySelector(".ul");
 const empty = document.querySelector(".empty");
+const body = document.querySelector(".body");
+
+const modoDark = document.querySelector(".bi-moon-fill");
+const modoLight = document.querySelector(".bi-brightness-high");
 
 
 
@@ -16,11 +20,12 @@ addBtn.addEventListener("click",(e)=>{
       const p = document.createElement("p");
       p.className = "tareaPorHacer";
       p.textContent = tarea;
+      console.log(tarea);
 
+     
       li.appendChild(p); //agrego el p al li
       li.appendChild(borrarTarea()); //Agrego la funcion ya que retrona el boton de "X", si no nunca aparecera
       listaTareas.appendChild(li); //Agrego el li a la ul
-
       input.value = ""; //Para que luego de agregar tarea, el input quede vacio(se resetee)
 
       empty.style.display = "none"; //Luego de agregar la tarea, que desaparezca el parrafo de que no hay tareas
@@ -55,3 +60,14 @@ function borrarTarea () {
    return deleteBtn; //Retornamos el boton para que se agregue la x
 
 }
+
+modoDark.addEventListener("click",()=>{
+   body.classList.add("active");
+   modoDark.style.display = "none";
+   modoLight.style.display = "block";
+});
+modoLight.addEventListener("click",()=>{
+   body.classList.remove("active");
+   modoDark.style.display="block";
+   modoLight.style.display="none";
+})

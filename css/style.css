@@ -77,3 +77,22 @@ li{
     border: none;
     cursor: pointer;
 }
+.h1-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bi-moon-fill{
+    cursor: pointer;
+   
+}
+.bi-brightness-high{
+    display: none;
+    cursor: pointer;
+}
+body.active{
+    background-color: black;
+}
+.disabled{
+    display: none;
+}
